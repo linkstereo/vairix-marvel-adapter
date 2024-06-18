@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: marvel-api-service
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    discovery:
+      client:
+        simple:
+          instances:
+            marvel-api-service[0]:
+              uri: http://localhost:80
+            marvel-api-service[1]:
+              uri: http://localhost:81
+  main:
+    allow-bean-definition-overriding=true:
