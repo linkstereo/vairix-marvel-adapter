@@ -11,12 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class MarvelAdapterApplication {
 
     public static void main(String[] args) {
-
         ConfigurableApplicationContext appContext = SpringApplication.run(MarvelAdapterApplication.class, args);
-
-        MarvelClient marvelClient = appContext.getBean(MarvelClient.class);
-        var chars = marvelClient.getCharacters();
-        var character = marvelClient.getCharacter("1011334");
     }
 
 }
