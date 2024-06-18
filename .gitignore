@@ -1,5 +1,10 @@
+target/
+
 # Compiled class file
 *.class
+
+# IntellijIdea metadata
+.idea
 
 # Log file
 *.log
